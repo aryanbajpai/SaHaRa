@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAHARA</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="./Images/logo (1).png" type="image/x-icon">
+</head>
+
+<body class="[&::-webkit-scrollbar]:hidden">
+
+    <div class="w-screen h-auto bg-gray-200">
+        <header>
+            <nav class="w-full h-[55px] xl:h-[65px] px-4 bg-[#2159c9] fixed z-10 overflow-hidden flex gap-2 ">
+                <logo class="cursor-pointer flex gap-1 w-[20%] xl:px-5 h-full pt-1 ml-2">
+                    <img src="./Images/logo (1).png" class="w-[30%] h-full">
+                    <img src="./Images/name.png" class="w-[50%] ">
+                </logo>
+                <search class="w-[55%] m-auto flex">
+                    <input type="text" placeholder="Search"
+                        class="rounded-l-xl w-[62%] h-[35px] px-2 text-gray-600 ml-5 xl:ml-16 outline-none border-b-[3px] border-solid border-[#141414] placeholder:text-gray-700">
+                    <div
+                        class="w-[15%] mr-5 xl:mr-8 bg-gray-700 hover:bg-gray-600 text-white rounded-r-xl border-b-[3px]">
+                        <svg class="w-[27px] h-[27px] m-auto mt-[3px] " xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                        </svg>
+                    </div>
+                </search>
+                <user class="w-[20%] flex justify-around xl:justify-evenly m-auto text-gray-200 ">
+                    <button id="cartBtn" class="hover:text-yellow-300 flex">
+                        <svg class="w-[30px] h-[30px] relative cursor-pointer" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                        </svg>
+                        <span id="cartCount" class="bg-red-600 absolute top-[11px] right-[70px] md:right-[123px] lg:right-[170px] xl:right-[245px] px-[6px] rounded-[50%] text-white text-[10px]">0</span>
+                    </button>
+                    <button class="hover:text-yellow-300">
+                        <svg class="w-[30px] h-[30px] cursor-pointer" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0M3.124 7.5A8.969 8.969 0 0 1 5.292 3m13.416 0a8.969 8.969 0 0 1 2.168 4.5" />
+                        </svg>
+                    </button>
+                    <button class="hover:text-yellow-300">
+                        <svg class="w-[30px] h-[30px] cursor-pointer" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                        </svg>
+                    </button>
+                </user>
+            </nav>
+        </header>
+
+        <div>
+            <div class="w-full relative">
+                <div class="w-[95%] m-auto pt-[68px] pb-2 xl:pt-[80px]"> </div>
+                <div id="prdt" class="bg-white w-[97%] m-auto grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-y-5 gap-5 p-4">
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="JS.js"></script>
+</body>
+
+</html>
